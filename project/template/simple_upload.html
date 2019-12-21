@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Office Oracle</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class = 'title_boo'>
+    <h1>Box<br>Office<br>Oracle</h1>
+    </div>
+
+    <div class = 'desc_boo'>
+        <h2>Upload your file</h2>
+        </div>
+    <div class = 'format'>
+        <h3>(.txt format)</h3>
+    </div>
+
+{% load static %}
+<div class = 'home_boo'>
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+</div>
+  {% if uploaded_file_url %}
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+  {% endif %}
+</body>
+{% endblock %}

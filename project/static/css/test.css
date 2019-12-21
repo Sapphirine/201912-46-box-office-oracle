@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    text-align: left;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  text-align: left;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-size: 150px;
+  position: fixed;
+  top: 30%;
+  left: 16%;
+  text-align: left;
+}
+h4 {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  position: fixed;
+  top: 55%;
+  left: 5%;
+  text-align: left;
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(151, 206, 228)
+  }
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(126, 203, 226)
+  }
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Office Oracle</title>
+</head>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<body>
+<h1>{{ content1 }}</h1>
+{% load static %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+
+
+
+</html>

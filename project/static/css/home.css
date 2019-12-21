@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+
+body {
+    background-color: rgb(151, 206, 228);
+   }
+
+.home_boo {
+    position: fixed;
+    top: 55%;
+    left: 55%;
+    text-align: center;
+}
+
+.title_boo {
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desc_boo {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.format {
+    position: fixed;
+    top: 45%;
+    left: 65%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
